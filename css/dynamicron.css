@@ -1,0 +1,27 @@
+:root {
+    --main-background-color: #ece1db;
+    --header-stripe-yellow: #f6b002;
+    --header-stripe-orange: #f12723;
+    --header-stripe-red: #e80a3b;
+    --header-stripe-purple: #b50e53;
+    --header-stripe-darkpurple: #6c1b5d;
+}
+
+.background {
+    background-color: var(--main-background-color);
+}
+
+.header-stripe{
+    background-image: linear-gradient(var(--header-stripe-yellow) 20%, var(--header-stripe-orange)20% 40%, var(--header-stripe-red) 40% 60%, 
+                                var(--header-stripe-purple) 60% 80%, var(--header-stripe-darkpurple) 80%);
+    height: 35px;
+}
+
+.flex-container{
+    display: flex;
+}
+
+.column-flex-container{
+    display: flex;
+    flex-direction: column;
+}
