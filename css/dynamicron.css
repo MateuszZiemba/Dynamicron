@@ -12,6 +12,7 @@
     --search-bar-red: #e50a40;
 }
 
+/* Flex containers  */
 .flex-container{
     display: flex;
 }
@@ -21,21 +22,34 @@
     flex-direction: column;
 }
 
-.solid-background-creamy {
-    background-color: var(--background-creamy-color);
+.header-flex-container{
+    display: flex;
+    flex-direction: column;
+    height: 120px;
+    width: 100%; 
 }
 
-.solid-background-white {
-    background-color: var(--background-white-stripe);
+.body-flex-container{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
 }
 
-.background-tiny-stripes{
-    background-image: repeating-linear-gradient(var(--background-white-stripe), var(--background-white-stripe) 2px, var(--background-grey-stripe) 2px, var(--background-grey-stripe) 4px)
+.footer-flex-container{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
 }
-.header-stripe{
+
+/* Header */
+.header-top-bar{
+    flex:1;
+}
+
+.header-color-stripe{
     background-image: linear-gradient(var(--header-stripe-yellow) 20%, var(--header-stripe-orange)20% 40%, var(--header-stripe-red) 40% 60%, 
                                 var(--header-stripe-purple) 60% 80%, var(--header-stripe-darkpurple) 80%);
-    height: 120px;
+    flex: 1;
 }
 
 .header-elements{
@@ -44,6 +58,53 @@
     height: 80px;
 }
 
+/* Body */
+.main-body-margins{
+    margin: 0;
+    padding: 0;
+}
+
+.body-side-margin{
+    flex: 1;
+}
+
+.main-body-content{
+    flex: 4;
+}
+
+.side-body-content{
+    flex: 2;
+}
+
+/* Footer */
+.left-footer-section{
+    flex:3;
+}
+.middle-footer-section{
+    flex: 3;
+}
+.right-footer-section{
+    flex: 3;
+}
+
+/* Background colors */
+.solid-background-creamy {
+    background-color: var(--background-creamy-color);
+}
+
+.solid-background-white {
+    background-color: var(--background-white-stripe);
+}
+
+.test{
+    background-color: #FF0000
+}
+
+.background-tiny-stripes{
+    background-image: repeating-linear-gradient(var(--background-white-stripe), var(--background-white-stripe) 2px, var(--background-grey-stripe) 2px, var(--background-grey-stripe) 4px)
+}
+
+/* Images */
 .vhs-logo{
     width: 7%;
 }
