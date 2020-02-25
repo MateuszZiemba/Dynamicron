@@ -12,6 +12,33 @@
     --search-bar-red: #e50a40;
 }
 
+/* Fonts */
+@font-face{
+    font-family: robotoRegular;
+    src: url(../fonts/Roboto/Roboto-Regular.ttf);
+}
+
+@font-face{
+    font-family: robotoMedium;
+    src: url(../fonts/Roboto/Roboto-Medium.ttf)
+}
+
+@font-face{
+    font-family: robotoMediumItalic;
+    src: url(../fonts/Roboto/Roboto-MediumItalic.ttf)
+}
+
+@font-face{
+    font-family: robotoBold;
+    src: url(../fonts/Roboto/Roboto-Bold.ttf)
+}
+
+@font-face{
+    font-family: robotoBlack;
+    src: url(../fonts/Roboto/Roboto-Black.ttf)
+}
+
+
 /* Flex containers  */
 .flex-container{
     display: flex;
@@ -87,6 +114,50 @@
     flex: 3;
 }
 
+.footer-vhs-uppertext{
+    font-family: robotoBold;
+    font-size: 1.60em;
+}
+
+.footer-vhs-lowertext{
+    font-family: robotoBlack;
+    font-size: 0.80em
+}
+
+.video-cassette-box{
+    margin: 15px 15px 25px 25px;
+    /* top right bottom end  */
+}
+
+.video-cassette-box-text{
+    margin-top: 0px;
+    margin-right: 0px;
+    margin-bottom: 0px;
+    margin-left: 7px;
+    padding:0px;
+}
+
+.video-cassette-text{
+    margin: 0px;
+    padding: 0px;
+}
+
+.lecture-video-text{
+    margin-top: 0px;
+    padding: 0px;
+}
+
+.video-recording-text{
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+.footer-origin-text{
+    font-family: robotoRegular;
+    font-size: 1em;
+    display: flex;
+}
+
 /* Background colors */
 .solid-background-creamy {
     background-color: var(--background-creamy-color);
@@ -96,15 +167,12 @@
     background-color: var(--background-white-stripe);
 }
 
-.test{
-    background-color: #FF0000
-}
-
 .background-tiny-stripes{
     background-image: repeating-linear-gradient(var(--background-white-stripe), var(--background-white-stripe) 2px, var(--background-grey-stripe) 2px, var(--background-grey-stripe) 4px)
 }
 
 /* Images */
 .vhs-logo{
-    width: 7%;
+    /* width: 14%; */
+    height: 62px;
 }
